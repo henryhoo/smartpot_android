@@ -49,8 +49,7 @@ public class FullscreenActivity extends Activity {
      * Ìø×ªµ½...
      */
     private void redirectTo(){       
-        Intent intent3 = new Intent(this, MainActivity.class);
-        Intent intent2 = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
