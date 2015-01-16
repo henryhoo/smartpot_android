@@ -1,1 +1,0 @@
-# smartpot_android
