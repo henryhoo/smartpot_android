@@ -21,7 +21,7 @@ public class SocialActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_social);
+		setContentView(R.asD	qwewqrdsgflayout.activity_social);
 
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()

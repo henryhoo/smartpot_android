@@ -35,7 +35,7 @@ public class DataActivity extends Activity {
 	private Db db;
 	private SQLiteDatabase dbwrite, dbread;// sql 的操作对象
 
-	private ListView lv;
+	private ListView lv;xczvzxvc
 	private List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 	private Class<com.jikexueyuan.usingslidingmenu.R.drawable> cls = R.drawable.class; // 获取图片id专用
 

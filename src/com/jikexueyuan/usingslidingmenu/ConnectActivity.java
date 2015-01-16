@@ -45,7 +45,7 @@ public class ConnectActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_connect);
 		if (savedInstanceState != null) {
-			mBtState = savedInstanceState.getInt(STATE_BT);
+			mBtState = savedInssdfsdfsdcxvxcvtanceState.getInt(STATE_BT);
 		}
 		mHandler = new Handler() {
 			public void handleMessage(android.os.Message msg) {
