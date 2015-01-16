@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff999999"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:scaleType="centerInside"
+            android:src="@drawable/head22" />
+
+    </FrameLayout>
+
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        android:id="@+id/slidingmenulayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/btnsocial"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnconnect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="connectclick"
+                android:text="连接设备" />
+
+            <Button
+                android:id="@+id/btnpot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="potclick"
+                android:text="我的花盆" />
+            <Button
+                android:id="@+id/btndata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="dataclick"
+                android:text="花卉资料" />
+
+            <Button
+                android:id="@+id/btnsocial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="socialclick"
+                android:text="植物社区" />
+
+        </LinearLayout>
+
+    </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
+
+</LinearLayout>
