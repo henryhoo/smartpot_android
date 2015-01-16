@@ -51,11 +51,7 @@ public class ConnectActivity extends Activity {
 			public void handleMessage(android.os.Message msg) {
 				if (msg.what == MESSAGE_READ) {
 					byte[] readBuf = (byte[]) msg.obj;
-					String strIncom = new String(readBuf, 0, msg.arg1); // create
-																		// string
-																		// from
-																		// bytes
-																		// array
+					String strIncom = new String(readBuf, 0, msg.arg1); // create string from bytes array
 					TextView viewMsg = (TextView) findViewById(R.id.view_message);
 					viewMsg.append('\n' + strIncom);
 				}
@@ -148,7 +144,7 @@ public class ConnectActivity extends Activity {
 		TextView viewMsg = (TextView) findViewById(R.id.view_message);
 		btAdapter = BluetoothAdapter.getDefaultAdapter();
 		if (checkBTState(btAdapter) < 0) {
-			viewMsg.append("\nBluetooth not found/enabled.");
+		viewMsg.append("\nBluetooth not found/enabled.");
 			return;
 		}
 
@@ -156,7 +152,7 @@ public class ConnectActivity extends Activity {
 		if (pairedDevices.size() > 0) {
 			for (BluetoothDevice device : pairedDevices) {
 				if (view != null)
-					viewMsg.append('\n' + device.getName()); // device.getAddress()
+				viewMsg.append('\n' + device.getName()); // device.getAddress()
 				if (device.getName().indexOf("HC-05") >= 0)
 					btDevice = device;
 			}
@@ -171,12 +167,12 @@ public class ConnectActivity extends Activity {
 		}
 	}
 
-	public void sendClick(View view) {
+/*	public void sendClick(View view) {
 		EditText editText = (EditText) findViewById(R.id.edit_message);
 		String message = editText.getText().toString();
 		if (mConnectedThread != null)
 			mConnectedThread.write(message);
-	}
+	}*/
 
 	private int checkBTState(BluetoothAdapter btAdapter) {
 		// Check for Bluetooth support and then check to make sure it is turned
