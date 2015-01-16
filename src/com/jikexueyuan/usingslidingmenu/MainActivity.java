@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
 
 	private SlidingMenu slidingMenu;
 
-
+aSDaSDzxC
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
